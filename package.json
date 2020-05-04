@@ -1,0 +1,9 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "A repo for linked list practice",
+  "main": "index.js",
+  "repository": "git@github.com:vkmita/linked-list.git",
+  "author": "Victor Kmita <me@vkmita.com>",
+  "license": "MIT"
+}
