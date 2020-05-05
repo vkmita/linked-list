@@ -11,10 +11,10 @@ describe('LinkedList', () => {
     });
   });
 
-  describe('toArray', () => {
+  describe('toValueArray', () => {
     it('turns the linked list into an array', () => {
       const linkedList = new LinkedList([3, 3, 8]);
-      expect(linkedList.toArray()).toEqual([3, 3, 8]);
+      expect(linkedList.toValueArray()).toEqual([3, 3, 8]);
     })
   });
 
@@ -22,23 +22,23 @@ describe('LinkedList', () => {
     it('reverses the linked list', () => {
       let linkedList = new LinkedList([]);
       linkedList.reverse();
-      expect(linkedList.toArray()).toEqual([]);
+      expect(linkedList.toValueArray()).toEqual([]);
 
       linkedList = new LinkedList([1]);
       linkedList.reverse();
-      expect(linkedList.toArray()).toEqual([1]);
+      expect(linkedList.toValueArray()).toEqual([1]);
 
       linkedList = new LinkedList([1, 2]);
       linkedList.reverse();
-      expect(linkedList.toArray()).toEqual([2, 1]);
+      expect(linkedList.toValueArray()).toEqual([2, 1]);
 
       linkedList = new LinkedList([1, 2, 3]);
       linkedList.reverse();
-      expect(linkedList.toArray()).toEqual([3, 2, 1]);
+      expect(linkedList.toValueArray()).toEqual([3, 2, 1]);
 
       linkedList = new LinkedList([1, 2, 3, 4, 5, 6]);
       linkedList.reverse();
-      expect(linkedList.toArray()).toEqual([6, 5, 4, 3, 2, 1]);
+      expect(linkedList.toValueArray()).toEqual([6, 5, 4, 3, 2, 1]);
     });
   })
 })

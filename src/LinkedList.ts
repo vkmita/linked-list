@@ -16,7 +16,7 @@ export default class LinkedList {
     }
   }
 
-  toArray = (): Array<any> => {
+  toValueArray = (): Array<any> => {
     let node = this.head;
     const array = [];
     while(node) {
