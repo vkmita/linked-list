@@ -43,7 +43,7 @@ export default class LinkedList {
     let node2 = node1.nextNode;
     node1.nextNode = head;
 
-    while (node2) {
+    while(node2) {
       const node3 = node2.nextNode;
       node2.nextNode = node1;
 
